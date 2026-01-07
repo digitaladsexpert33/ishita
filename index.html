@@ -1,41 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Free Stock Market Education</title>
-  <meta name="description" content="Learn chart basics, market psychology & risk management. 100% educational. No buy/sell tips.">
-  <style>
-    :root{--bg:#0c0c1d;--panel:#15182b;--text:#eef2ff;--muted:#a7b0c5;--brand:#00ff99;}
-    *{box-sizing:border-box} html,body{margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:grid;place-items:center;padding:16px}
-    .card{width:100%;max-width:480px;background:var(--panel);border:1px solid #262b45;border-radius:16px;padding:20px;text-align:center;box-shadow:0 10px 35px rgba(0,0,0,.35)}
-    h1{font-size:1.6rem;margin:.25rem 0 0;background:linear-gradient(90deg,#00f0ff,var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .sub{color:var(--muted);font-size:.98rem;margin:.5rem auto 1rem;max-width:36ch}
-    ul{list-style:none;padding:0;margin:0 0 1rem} li{margin:.45rem 0}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px dashed rgba(0,255,153,.35);background:rgba(0,255,153,.08);color:#d8ffe9;font-size:.85rem;margin-bottom:.75rem}
-    .cta{display:inline-block;margin-top:.5rem;padding:12px 16px;background:var(--brand);color:#041b14;font-weight:700;border-radius:12px;text-decoration:none;box-shadow:0 0 0 0 rgba(0,255,153,.55);animation:pulse 1.7s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,255,153,.45)}70%{box-shadow:0 0 0 18px rgba(0,255,153,0)}100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}}
-    .note{font-size:.86rem;color:var(--muted);margin-top:1rem}
-    .disclaimer{font-size:.8rem;color:#9da7bb;margin-top:.6rem}
-    footer{margin-top:.9rem;font-size:.75rem;opacity:.8}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishita Tips | Cricket Analysis Access</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* (styles remain unchanged) */
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#eef2f4;
+  display:flex;
+  justify-content:center;
+  padding:24px;
+}
+.card{
+  max-width:460px;
+  width:100%;
+  background:#fff;
+  border-radius:22px;
+  box-shadow:0 22px 40px rgba(0,0,0,.10);
+  overflow:hidden;
+}
+.header{
+  padding:18px 16px 6px;
+  text-align:center;
+}
+.avatar{
+  width:96px;
+  height:96px;
+  border-radius:16px;
+  object-fit:cover;
+  border:3px solid #6a5cff;
+}
+h2{
+  margin:14px 0 6px;
+  font-size:24px;
+  color:#4c2bd9;
+}
+.subtitle{
+  font-size:14px;
+  color:#333;
+  line-height:1.4;
+}
+.warning{
+  margin:14px 0;
+  padding:12px;
+  background:#fff3cd;
+  color:#7a5200;
+  font-size:13px;
+  border-radius:12px;
+  font-weight:600;
+}
+.stats{
+  display:flex;
+  justify-content:space-between;
+  margin:18px 0 6px;
+  font-size:13px;
+}
+.stats div span{
+  display:block;
+  font-weight:700;
+  font-size:17px;
+  color:#4c2bd9;
+}
+.cta{
+  display:block;
+  background:linear-gradient(135deg,#6a5cff,#9a52ff);
+  background-size:200% 200%;
+  color:#fff;
+  text-align:center;
+  padding:16px 0;
+  margin:18px 0 6px;
+  border-radius:40px;
+  font-weight:800;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  cursor:pointer;
+  animation:move 3s ease infinite;
+  user-select:none;
+}
+@keyframes move{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.section{
+  margin:14px;
+  padding:18px;
+  background:#f7f8ff;
+  border-radius:18px;
+  font-size:14px;
+}
+.section h3{
+  margin:0 0 10px;
+  color:#4c2bd9;
+}
+.feature{
+  margin:6px 0;
+}
+.footer{
+  text-align:center;
+  font-size:12px;
+  color:#666;
+  padding:12px 0 18px;
+}
+</style>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){
+ if(f.fbq)return;
+ n=f.fbq=function(){n.callMethod?
+ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+ if(!f._fbq)f._fbq=n;
+ n.push=n;n.loaded=!0;n.version='2.0';
+ n.queue=[];
+ t=b.createElement(e);t.async=!0;
+ t.src=v;s=b.getElementsByTagName(e)[0];
+ s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1184233780354763');
+fbq('track','PageView');
+</script>
+
 </head>
+
 <body>
-  <main class="card">
-    <div class="pill">100% Educational • Policy Safe</div>
-    <h1>Learn Stock Market the Right Way</h1>
-    <p class="sub">Chart basics, market psychology & risk management for beginners. No tips, no promises.</p>
-    <ul aria-label="You will learn">
-      <li>• Reading trends & support/resistance (basics only)</li>
-      <li>• Risk rules & common beginner mistakes</li>
-      <li>• How to practice without real money</li>
-    </ul>
-    <a class="cta" href="bridge.html" rel="nofollow noopener">Start Learning</a>
-    <p class="note">No login required. Access learning resources after a short verification.</p>
-    <p class="disclaimer"><em>For educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
-    <footer>© <span id="y"></span> Market Basics Learning</footer>
-  </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+
+<div class="card">
+
+  <div class="header">
+    <img src="https://netadexpert.live/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-22.44.06.jpeg" class="avatar">
+
+    <h2>ISHITA TIPS</h2>
+
+    <div class="subtitle">
+      Private cricket match analysis access<br>
+      <strong>For serious followers only</strong>
+    </div>
+
+    <div class="warning">
+      ⚠️ This is NOT a free tips group<br>
+      Budget & discipline required
+    </div>
+
+    <div class="stats">
+      <div><span>160K+</span>Community</div>
+      <div><span>Analysis</span>Based</div>
+      <div><span>Selective</span>Access</div>
+    </div>
+
+    <div id="ctaBtn" class="cta">
+      Proceed to Telegram
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>What This Access Includes</h3>
+    <div class="feature">• Pre-match & live match analysis</div>
+    <div class="feature">• Risk-based prediction approach</div>
+    <div class="feature">• No guaranteed or fixed tips</div>
+    <div class="feature">• Entry allowed for disciplined users only</div>
+  </div>
+
+  <div class="footer">
+    No free predictions • Serious users only
+  </div>
+
+</div>
+
+<script>
+const btn = document.getElementById('ctaBtn');
+
+btn.addEventListener('click', ()=>{
+  try{
+    // fbq('track','Subscribe');  <-- removed
+  }catch(e){}
+
+  window.location.href = "https://t.me/+_5Zl1QBPmepkM2U1";
+});
+</script>
+
 </body>
 </html>
