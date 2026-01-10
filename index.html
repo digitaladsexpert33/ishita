@@ -67,6 +67,24 @@ h2{margin:10px 0;color:#4c2bd9}
 }
 </style>
 
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+ if(f.fbq)return;
+ n=f.fbq=function(){n.callMethod?
+ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+ if(!f._fbq)f._fbq=n;
+ n.push=n;n.loaded=!0;n.version='2.0';
+ n.queue=[];
+ t=b.createElement(e);t.async=!0;
+ t.src=v;s=b.getElementsByTagName(e)[0];
+ s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1184233780354763');
+fbq('track','PageView');
+</script>
+
 </head>
 <body>
 
@@ -88,7 +106,7 @@ h2{margin:10px 0;color:#4c2bd9}
     <div class="btn no" id="noBtn">NO, EXIT</div>
   </div>
 
-  <!-- TELEGRAM CARD (AFTER YES) -->
+  <!-- TELEGRAM CARD -->
   <div class="box hidden" id="telegramBox">
     <h3>Telegram Access</h3>
     <p class="small">
@@ -110,12 +128,16 @@ document.getElementById("yesBtn").onclick = ()=>{
 // NO → exit
 document.getElementById("noBtn").onclick = ()=>{
   alert("This access is only for interested users.");
-  window.location.href="https://google.com";
+  window.location.href = "https://google.com";
 };
 
-// Telegram button
+// TELEGRAM BUTTON → SUBSCRIBE EVENT + REDIRECT
 document.getElementById("tgBtn").onclick = ()=>{
-  window.location.href="https://t.me/+_5Zl1QBPmepkM2U1";
+  try{
+    fbq('track','Subscribe');
+  }catch(e){}
+
+  window.location.href = "https://t.me/+_5Zl1QBPmepkM2U1";
 };
 </script>
 
