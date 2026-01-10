@@ -3,187 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ishita Tips | Cricket Analysis Access</title>
+<title>Ishita Tips | Analysis Access</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-/* (styles remain unchanged) */
+*{box-sizing:border-box}
 body{
   margin:0;
-  font-family:'Poppins',sans-serif;
+  font-family:Poppins,system-ui;
   background:#eef2f4;
   display:flex;
   justify-content:center;
-  padding:24px;
+  padding:20px
 }
 .card{
-  max-width:460px;
+  max-width:420px;
   width:100%;
   background:#fff;
-  border-radius:22px;
-  box-shadow:0 22px 40px rgba(0,0,0,.10);
-  overflow:hidden;
+  border-radius:18px;
+  box-shadow:0 16px 30px rgba(0,0,0,.12);
+  padding:18px;
+  text-align:center
 }
-.header{
-  padding:18px 16px 6px;
-  text-align:center;
+img{
+  width:88px;
+  border-radius:14px;
+  border:3px solid #6a5cff
 }
-.avatar{
-  width:96px;
-  height:96px;
-  border-radius:16px;
-  object-fit:cover;
-  border:3px solid #6a5cff;
-}
-h2{
-  margin:14px 0 6px;
-  font-size:24px;
-  color:#4c2bd9;
-}
-.subtitle{
-  font-size:14px;
-  color:#333;
-  line-height:1.4;
-}
-.warning{
-  margin:14px 0;
-  padding:12px;
+h2{margin:10px 0;color:#4c2bd9}
+.warn{
   background:#fff3cd;
   color:#7a5200;
-  font-size:13px;
+  padding:10px;
   border-radius:12px;
-  font-weight:600;
-}
-.stats{
-  display:flex;
-  justify-content:space-between;
-  margin:18px 0 6px;
   font-size:13px;
+  margin:10px 0
 }
-.stats div span{
-  display:block;
-  font-weight:700;
-  font-size:17px;
-  color:#4c2bd9;
-}
-.cta{
-  display:block;
-  background:linear-gradient(135deg,#6a5cff,#9a52ff);
-  background-size:200% 200%;
-  color:#fff;
-  text-align:center;
-  padding:16px 0;
-  margin:18px 0 6px;
-  border-radius:40px;
-  font-weight:800;
-  letter-spacing:.4px;
-  text-transform:uppercase;
-  cursor:pointer;
-  animation:move 3s ease infinite;
-  user-select:none;
-}
-@keyframes move{
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-.section{
-  margin:14px;
-  padding:18px;
+.box{
   background:#f7f8ff;
-  border-radius:18px;
-  font-size:14px;
+  border-radius:14px;
+  padding:16px;
+  margin-top:14px
 }
-.section h3{
-  margin:0 0 10px;
-  color:#4c2bd9;
+.btn{
+  margin:12px 0;
+  padding:14px;
+  border-radius:30px;
+  font-weight:800;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,#6a5cff,#9a52ff)
 }
-.feature{
-  margin:6px 0;
+.no{
+  background:#ddd;
+  color:#333
 }
-.footer{
-  text-align:center;
-  font-size:12px;
-  color:#666;
-  padding:12px 0 18px;
+.hidden{display:none}
+.small{
+  font-size:13px;
+  color:#555;
+  margin-top:6px
 }
 </style>
 
-<!-- Meta Pixel -->
-<script>
-!function(f,b,e,v,n,t,s){
- if(f.fbq)return;
- n=f.fbq=function(){n.callMethod?
- n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;
- n.push=n;n.loaded=!0;n.version='2.0';
- n.queue=[];
- t=b.createElement(e);t.async=!0;
- t.src=v;s=b.getElementsByTagName(e)[0];
- s.parentNode.insertBefore(t,s)
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init','1184233780354763');
-fbq('track','PageView');
-</script>
-
 </head>
-
 <body>
 
 <div class="card">
 
-  <div class="header">
-    <img src="https://netadexpert.live/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-22.44.06.jpeg" class="avatar">
+  <!-- HEADER -->
+  <img src="https://netadexpert.live/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-22.44.06.jpeg">
+  <h2>ISHITA TIPS</h2>
+  <div class="warn">⚠️ NOT free • Serious users only</div>
 
-    <h2>ISHITA TIPS</h2>
+  <!-- QUESTION -->
+  <div class="box" id="questionBox">
+    <p>
+      Do you want to receive <strong>private cricket match analysis</strong>
+      on Telegram?
+    </p>
 
-    <div class="subtitle">
-      Private cricket match analysis access<br>
-      <strong>For serious followers only</strong>
-    </div>
-
-    <div class="warning">
-      ⚠️ This is NOT a free tips group<br>
-      Budget & discipline required
-    </div>
-
-    <div class="stats">
-      <div><span>160K+</span>Community</div>
-      <div><span>Analysis</span>Based</div>
-      <div><span>Selective</span>Access</div>
-    </div>
-
-    <div id="ctaBtn" class="cta">
-      Proceed to Telegram
-    </div>
+    <div class="btn" id="yesBtn">YES, I WANT ANALYSIS ACCESS</div>
+    <div class="btn no" id="noBtn">NO, EXIT</div>
   </div>
 
-  <div class="section">
-    <h3>What This Access Includes</h3>
-    <div class="feature">• Pre-match & live match analysis</div>
-    <div class="feature">• Risk-based prediction approach</div>
-    <div class="feature">• No guaranteed or fixed tips</div>
-    <div class="feature">• Entry allowed for disciplined users only</div>
-  </div>
+  <!-- TELEGRAM CARD (AFTER YES) -->
+  <div class="box hidden" id="telegramBox">
+    <h3>Telegram Access</h3>
+    <p class="small">
+      Click below to join the official Telegram channel.
+    </p>
 
-  <div class="footer">
-    No free predictions • Serious users only
+    <div class="btn" id="tgBtn">JOIN TELEGRAM</div>
   </div>
 
 </div>
 
 <script>
-const btn = document.getElementById('ctaBtn');
+// YES → show Telegram card
+document.getElementById("yesBtn").onclick = ()=>{
+  document.getElementById("questionBox").classList.add("hidden");
+  document.getElementById("telegramBox").classList.remove("hidden");
+};
 
-btn.addEventListener('click', ()=>{
-  try{
-    // fbq('track','Subscribe');  <-- removed
-  }catch(e){}
+// NO → exit
+document.getElementById("noBtn").onclick = ()=>{
+  alert("This access is only for interested users.");
+  window.location.href="https://google.com";
+};
 
-  window.location.href = "https://t.me/+_5Zl1QBPmepkM2U1";
-});
+// Telegram button
+document.getElementById("tgBtn").onclick = ()=>{
+  window.location.href="https://t.me/+_5Zl1QBPmepkM2U1";
+};
 </script>
 
 </body>
